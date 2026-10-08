@@ -1,0 +1,21 @@
+{
+  "name": "leadbot",
+  "version": "1.0.0",
+  "description": "Finds local businesses, drafts personalized WhatsApp + email outreach, sends emails safely",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --no-warnings src/server.js",
+    "find": "node --no-warnings scripts/find.js",
+    "draft": "node --no-warnings scripts/draft.js",
+    "email": "node --no-warnings scripts/email.js",
+    "test": "node --no-warnings --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemailer": "^6.10.1"
+  }
+}
